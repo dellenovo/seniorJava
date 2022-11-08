@@ -7,5 +7,6 @@ import lombok.Data;
 @TableName("CUSTOMER")
 public class Customer {
     private Long id;
+    private Long mobile;
     private String name;
 }
