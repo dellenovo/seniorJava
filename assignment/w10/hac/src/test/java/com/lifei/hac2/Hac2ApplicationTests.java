@@ -48,4 +48,18 @@ class Hac2ApplicationTests {
 		assertNull(cdb);
 	}
 
+	@Test
+	public void testMyCat2M1S() {
+		customerMapper.delete(null);
+		for (int i = 0; i < 2; i++) {
+			Customer customer = new Customer();
+			customer.setId((long)i);
+			customer.setName("Lifei" + i);
+			customerMapper.insert(customer);
+		}
+
+		List<Customer> customerList = customerMapper.selectList(null);
+		assertEquals(2, customerList.size());
+	}
+
 }
