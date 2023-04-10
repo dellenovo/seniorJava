@@ -1,0 +1,11 @@
+# 配置配置中心的服务地址
+spring:
+  application:
+    # 配置应用名称
+    name: msc-purchase
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        group: SEATA_GROUP

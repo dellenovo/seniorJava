@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="com.lifei.dao.UserMapper">
+    <select id="findAll" resultType="com.lifei.pojo.User">
+        select * from tab_user;
+    </select>
+</mapper>

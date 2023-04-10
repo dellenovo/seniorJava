@@ -1,0 +1,17 @@
+server:
+  port: ${port:8081}
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.29:8847,192.168.1.29:8848,192.168.1.29:8849
+  application:
+    name: msc-payment
+
+logging:
+  pattern:
+    console: level-%level %msg%n
+  level:
+    root: info
+    com.lifei: debug
